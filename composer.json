@@ -1,0 +1,12 @@
+{
+    "name": "delems/apitools",
+    "description": "Backend API",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Sergey Nenashev",
+            "email": "sn@mov.ru"
+        }
+    ],
+    "require": {}
+}
