@@ -1,8 +1,13 @@
 <?php
 
-namespace App;
+namespace APITools;
 
 use Pimple\Container;
+use Bullet\Request;
+use Bullet\Response;
+use APITools\Config;
+use APITools\DB;
+
 
 class App extends Container
 {
@@ -16,8 +21,15 @@ class App extends Container
         parent::__construct($values);
     }
 
-    public function hello() {
-        return "Hello World!";
+    public function run($request) {
+        return ['status'=>true] ;
+    }
+
+    public function sendMail ($from, $to, $subject, $message){
+
+            mail($to, $subject, $message,
+                implode("\r\n", ["From: $from"]));
+
     }
 
 }

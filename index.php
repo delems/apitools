@@ -1,7 +1,7 @@
 <?php
 use \Rackem\Rack;
 
-require __DIR__ . '/src/MyBer/App.php';
+require __DIR__ . '/src/APITools/App.php';
 require __DIR__ . '/vendor/autoload.php';
 
 // Bullet App
